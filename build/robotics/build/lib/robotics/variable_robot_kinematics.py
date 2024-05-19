@@ -63,19 +63,18 @@ class Robot():
             if self.parse2string(dh_parameter_copy[0]) == 'REVOLUTE':
                 dh_parameter_copy[1] = self.offset_parameters[idx][1]+movement_vector[idx]
             elif self.parse2string(dh_parameter_copy[0]) == 'PRISMATIC':
-                dh_parameter_copy[3] = self.offset_parameters[idx][3]+movement_vector[idx]
-            print(dh_parameter_copy)
-            print(tf.trotz(dh_parameter_copy[1]))
-            print(tf.transz(dh_parameter_copy[2])@tf.transx(dh_parameter_copy[3])@tf.trotx(dh_parameter_copy[4]))
+                dh_parameter_copy[2] = self.offset_parameters[idx][2]+movement_vector[idx]
             self.joint_transforms.append(tf.trotz(dh_parameter_copy[1])@tf.transz(dh_parameter_copy[2])@tf.transx(dh_parameter_copy[3])@tf.trotx(dh_parameter_copy[4]))
             self.end_effector = self.end_effector@self.joint_transforms[-1]
-        print(self.joint_transforms)
 
     def get_joints_number(self) -> int:
         return self.joints_number
     
     def get_joint_transforms(self) -> np.array:
         return self.joint_transforms
+    
+    def get_end_effector(self) -> np.array:
+        return self.end_effector
 
 class VariableRobotKinematics(Node):
     def __init__(self, robot):
@@ -89,6 +88,7 @@ class VariableRobotKinematics(Node):
 
         self.get_logger().info('Variable Robot Kinematics Node has been started')
 
+        self.test_number = '1'
         self.move_robot(Float64MultiArray(data=[0 for joint in range(self.robot.get_joints_number())]))
 
     def move_robot(self, msg) -> None:
@@ -113,13 +113,30 @@ class VariableRobotKinematics(Node):
             tf_message.child_frame_id = f'joint_{idx}'
             self.tf_broadcaster.sendTransform(tf_message)
 
-        self.get_logger().info('TF messages have been sent')
-        self.get_logger().info(f'End effector position: {self.robot.end_effector}')
+        print()
+        print('-'*32+'test'+self.test_number+'-'*32)
+        print('q_values:', movement_vector)
+        print('Forward Kinematics:')
+        print(self.robot.get_end_effector())
+        print('rpy:')
+        print(tf.rot2rpyfull(self.robot.get_end_effector()))
+        print('-'*70)
+        print()
+        self.test_number = str(int(self.test_number)+1)
 
 def main():
+    np.set_printoptions(precision=4)
+    #Suppress exponential formating
+    np.set_printoptions(suppress=True)
     rclpy.init() 
-    robot = Robot(RevoluteJoint(), RevoluteJoint(l_offset=1))
-    variable_robot_kinematics = VariableRobotKinematics(robot)
+    #printed_robot = Robot(RevoluteJoint(d_offset=0.01, l_offset=0.1, alpha_offset=np.pi/2), PrismaticJoint(d_offset=0.3))
+    cobot = Robot(RevoluteJoint(d_offset=0.243, alpha_offset=-np.pi/2), 
+                  RevoluteJoint(theta_offset=-np.pi/2, l_offset=0.2, alpha_offset=np.pi),
+                  RevoluteJoint(theta_offset=-np.pi/2, l_offset=0.087, alpha_offset=np.pi/2),
+                  RevoluteJoint(d_offset=0.2276, alpha_offset=np.pi/2),
+                  RevoluteJoint(alpha_offset=-np.pi/2),
+                  RevoluteJoint(d_offset=0.0615))
+    variable_robot_kinematics = VariableRobotKinematics(cobot)
     rclpy.spin(variable_robot_kinematics)
     variable_robot_kinematics.destroy_node()
     rclpy.shutdown()
