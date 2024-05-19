@@ -1,0 +1,19 @@
+go2goal:
+  ros__parameters:
+    KvP: 0.4
+    KthetaP: 0.55
+    wheel_length: 0.5
+    wheel_radius: 0.1
+    tolerance: 0.1
+    linear_acc: 0.3
+    angular_acc: 0.2
+
+odom2wheelspeeds:
+  ros__parameters:
+    wheel_length: 0.5
+    wheel_radius: 0.1
+
+gz_tf_to_rviz_tf:
+  ros__parameters:
+    wheel_length: 0.1874
+    wheel_radius: 0.05

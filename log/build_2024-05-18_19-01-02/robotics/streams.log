@@ -1,0 +1,23 @@
+[1.065s] Invoking command in '/home/paolo/ros2_ws/src/robotics': PYTHONPATH=/home/paolo/ros2_ws/build/robotics/prefix_override:/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robotics build --build-base /home/paolo/ros2_ws/build/robotics/build install --record /home/paolo/ros2_ws/build/robotics/install.log --single-version-externally-managed install_data
+[1.330s] running egg_info
+[1.344s] writing ../../build/robotics/robotics.egg-info/PKG-INFO
+[1.345s] writing dependency_links to ../../build/robotics/robotics.egg-info/dependency_links.txt
+[1.346s] writing requirements to ../../build/robotics/robotics.egg-info/requires.txt
+[1.346s] writing top-level names to ../../build/robotics/robotics.egg-info/top_level.txt
+[1.372s] reading manifest file '../../build/robotics/robotics.egg-info/SOURCES.txt'
+[1.373s] adding license file 'LICENSE'
+[1.373s] writing manifest file '../../build/robotics/robotics.egg-info/SOURCES.txt'
+[1.374s] running build
+[1.374s] running build_py
+[1.374s] copying robotics/__init__.py -> /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+[1.375s] running install
+[1.381s] running install_lib
+[1.394s] running install_data
+[1.394s] copying resource/robotics -> /home/paolo/ros2_ws/install/robotics/share/ament_index/resource_index/packages
+[1.394s] copying package.xml -> /home/paolo/ros2_ws/install/robotics/share/robotics
+[1.394s] running install_egg_info
+[1.408s] removing '/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics-0.0.0-py3.10.egg-info' (and everything under it)
+[1.409s] Copying ../../build/robotics/robotics.egg-info to /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics-0.0.0-py3.10.egg-info
+[1.410s] running install_scripts
+[1.528s] writing list of installed files to '/home/paolo/ros2_ws/build/robotics/install.log'
+[1.636s] Invoked command in '/home/paolo/ros2_ws/src/robotics' returned '0': PYTHONPATH=/home/paolo/ros2_ws/build/robotics/prefix_override:/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robotics build --build-base /home/paolo/ros2_ws/build/robotics/build install --record /home/paolo/ros2_ws/build/robotics/install.log --single-version-externally-managed install_data

@@ -1,0 +1,5 @@
+  File "/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics/variable_robot_kinematics.py", line 114
+    robot = Robot(RevoluteJoint(), RevoluteJoint(theta_offset=1.57 l_offset=1))
+                                                              ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+

@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/robotics/robotics.egg-info/PKG-INFO
+writing dependency_links to ../../build/robotics/robotics.egg-info/dependency_links.txt
+writing entry points to ../../build/robotics/robotics.egg-info/entry_points.txt
+writing requirements to ../../build/robotics/robotics.egg-info/requires.txt
+writing top-level names to ../../build/robotics/robotics.egg-info/top_level.txt
+reading manifest file '../../build/robotics/robotics.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/robotics/robotics.egg-info/SOURCES.txt'
+running build
+running build_py
+copying robotics/__init__.py -> /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+copying robotics/variable_robot_kinematics.py -> /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+running install
+running install_lib
+copying /home/paolo/ros2_ws/build/robotics/build/lib/robotics/variable_robot_kinematics.py -> /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics
+byte-compiling /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics/variable_robot_kinematics.py to variable_robot_kinematics.cpython-310.pyc
+running install_data
+copying resource/robotics -> /home/paolo/ros2_ws/install/robotics/share/ament_index/resource_index/packages
+copying package.xml -> /home/paolo/ros2_ws/install/robotics/share/robotics
+running install_egg_info
+removing '/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/robotics/robotics.egg-info to /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics-0.0.0-py3.10.egg-info
+running install_scripts
+Installing variable_robot_kinematics script to /home/paolo/ros2_ws/install/robotics/lib/robotics
+writing list of installed files to '/home/paolo/ros2_ws/build/robotics/install.log'

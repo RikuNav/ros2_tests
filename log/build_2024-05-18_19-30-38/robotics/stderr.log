@@ -1,0 +1,5 @@
+  File "/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics/variable_robot_kinematics.py", line 59
+    if movement_vector = None: return
+       ^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+

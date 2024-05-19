@@ -1,0 +1,33 @@
+[1.148s] Invoking command in '/home/paolo/ros2_ws/src/robotics': PYTHONPATH=/home/paolo/ros2_ws/build/robotics/prefix_override:/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robotics build --build-base /home/paolo/ros2_ws/build/robotics/build install --record /home/paolo/ros2_ws/build/robotics/install.log --single-version-externally-managed install_data
+[1.417s] running egg_info
+[1.417s] creating ../../build/robotics/robotics.egg-info
+[1.428s] writing ../../build/robotics/robotics.egg-info/PKG-INFO
+[1.429s] writing dependency_links to ../../build/robotics/robotics.egg-info/dependency_links.txt
+[1.429s] writing requirements to ../../build/robotics/robotics.egg-info/requires.txt
+[1.429s] writing top-level names to ../../build/robotics/robotics.egg-info/top_level.txt
+[1.429s] writing manifest file '../../build/robotics/robotics.egg-info/SOURCES.txt'
+[1.452s] reading manifest file '../../build/robotics/robotics.egg-info/SOURCES.txt'
+[1.452s] adding license file 'LICENSE'
+[1.453s] writing manifest file '../../build/robotics/robotics.egg-info/SOURCES.txt'
+[1.453s] running build
+[1.453s] running build_py
+[1.454s] creating /home/paolo/ros2_ws/build/robotics/build
+[1.454s] creating /home/paolo/ros2_ws/build/robotics/build/lib
+[1.454s] creating /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+[1.454s] copying robotics/__init__.py -> /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+[1.454s] running install
+[1.458s] running install_lib
+[1.471s] creating /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics
+[1.471s] copying /home/paolo/ros2_ws/build/robotics/build/lib/robotics/__init__.py -> /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics
+[1.471s] byte-compiling /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics/__init__.py to __init__.cpython-310.pyc
+[1.472s] running install_data
+[1.473s] creating /home/paolo/ros2_ws/install/robotics/share/ament_index
+[1.473s] creating /home/paolo/ros2_ws/install/robotics/share/ament_index/resource_index
+[1.473s] creating /home/paolo/ros2_ws/install/robotics/share/ament_index/resource_index/packages
+[1.474s] copying resource/robotics -> /home/paolo/ros2_ws/install/robotics/share/ament_index/resource_index/packages
+[1.474s] copying package.xml -> /home/paolo/ros2_ws/install/robotics/share/robotics
+[1.474s] running install_egg_info
+[1.490s] Copying ../../build/robotics/robotics.egg-info to /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics-0.0.0-py3.10.egg-info
+[1.491s] running install_scripts
+[1.608s] writing list of installed files to '/home/paolo/ros2_ws/build/robotics/install.log'
+[1.735s] Invoked command in '/home/paolo/ros2_ws/src/robotics' returned '0': PYTHONPATH=/home/paolo/ros2_ws/build/robotics/prefix_override:/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robotics build --build-base /home/paolo/ros2_ws/build/robotics/build install --record /home/paolo/ros2_ws/build/robotics/install.log --single-version-externally-managed install_data

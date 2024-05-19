@@ -1,0 +1,38 @@
+[1.110s] Invoking command in '/home/paolo/ros2_ws/src/robotics': PYTHONPATH=/home/paolo/ros2_ws/build/robotics/prefix_override:/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robotics build --build-base /home/paolo/ros2_ws/build/robotics/build install --record /home/paolo/ros2_ws/build/robotics/install.log --single-version-externally-managed install_data
+[1.375s] running egg_info
+[1.386s] writing ../../build/robotics/robotics.egg-info/PKG-INFO
+[1.388s] writing dependency_links to ../../build/robotics/robotics.egg-info/dependency_links.txt
+[1.388s] writing entry points to ../../build/robotics/robotics.egg-info/entry_points.txt
+[1.388s] writing requirements to ../../build/robotics/robotics.egg-info/requires.txt
+[1.388s] writing top-level names to ../../build/robotics/robotics.egg-info/top_level.txt
+[1.413s] reading manifest file '../../build/robotics/robotics.egg-info/SOURCES.txt'
+[1.414s] adding license file 'LICENSE'
+[1.415s] writing manifest file '../../build/robotics/robotics.egg-info/SOURCES.txt'
+[1.415s] running build
+[1.415s] running build_py
+[1.416s] copying robotics/go2goal.py -> /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+[1.416s] copying robotics/__init__.py -> /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+[1.416s] copying robotics/variable_robot_kinematics.py -> /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+[1.416s] copying robotics/odom2wheelspeeds.py -> /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+[1.416s] copying robotics/gz_tf_to_rviz_tf.py -> /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+[1.416s] copying robotics/path_generator.py -> /home/paolo/ros2_ws/build/robotics/build/lib/robotics
+[1.417s] running install
+[1.423s] running install_lib
+[1.437s] copying /home/paolo/ros2_ws/build/robotics/build/lib/robotics/go2goal.py -> /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics
+[1.437s] copying /home/paolo/ros2_ws/build/robotics/build/lib/robotics/odom2wheelspeeds.py -> /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics
+[1.437s] copying /home/paolo/ros2_ws/build/robotics/build/lib/robotics/gz_tf_to_rviz_tf.py -> /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics
+[1.437s] copying /home/paolo/ros2_ws/build/robotics/build/lib/robotics/path_generator.py -> /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics
+[1.438s] byte-compiling /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics/go2goal.py to go2goal.cpython-310.pyc
+[1.439s] byte-compiling /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics/odom2wheelspeeds.py to odom2wheelspeeds.cpython-310.pyc
+[1.440s] byte-compiling /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics/gz_tf_to_rviz_tf.py to gz_tf_to_rviz_tf.cpython-310.pyc
+[1.441s] byte-compiling /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics/path_generator.py to path_generator.cpython-310.pyc
+[1.442s] running install_data
+[1.442s] copying resource/robotics -> /home/paolo/ros2_ws/install/robotics/share/ament_index/resource_index/packages
+[1.442s] copying package.xml -> /home/paolo/ros2_ws/install/robotics/share/robotics
+[1.442s] running install_egg_info
+[1.459s] removing '/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics-0.0.0-py3.10.egg-info' (and everything under it)
+[1.459s] Copying ../../build/robotics/robotics.egg-info to /home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages/robotics-0.0.0-py3.10.egg-info
+[1.460s] running install_scripts
+[1.576s] Installing variable_robot_kinematics script to /home/paolo/ros2_ws/install/robotics/lib/robotics
+[1.576s] writing list of installed files to '/home/paolo/ros2_ws/build/robotics/install.log'
+[1.713s] Invoked command in '/home/paolo/ros2_ws/src/robotics' returned '0': PYTHONPATH=/home/paolo/ros2_ws/build/robotics/prefix_override:/home/paolo/ros2_ws/install/robotics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robotics build --build-base /home/paolo/ros2_ws/build/robotics/build install --record /home/paolo/ros2_ws/build/robotics/install.log --single-version-externally-managed install_data

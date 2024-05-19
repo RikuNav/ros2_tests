@@ -1,0 +1,6 @@
+[console_scripts]
+go2goal = robotics.go2goal:main
+gz_tf_to_rviz_tf = robotics.gz_tf_to_rviz_tf:main
+odom2wheelspeeds = robotics.odom2wheelspeeds:main
+path_generator = robotics.path_generator:main
+variable_robot_kinematics = robotics.variable_robot_kinematics:main
